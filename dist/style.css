@@ -4,5 +4,143 @@
 .another-example {
   border-style: groove; }
 
-.something {
-  color: black; }
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  margin: 0px; }
+
+.flex-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.flex, .img {
+  width: 100%; }
+
+.headerInstagram {
+  border-bottom: 1px solid #afafaf;
+  background-color: #d8d8d8;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 10%;
+          flex: 2 1 10%;
+  max-height: 64px; }
+
+.logo {
+  padding: 15px; }
+
+.icon-header {
+  padding: 20px; }
+
+.mainInstagram {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 3 70%;
+          flex: 3 3 70%;
+  overflow: scroll; }
+
+.user {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 60px;
+  width: 100%; }
+
+.userimage {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.icon {
+  padding: 15px; }
+
+.photo {
+  padding: 5px;
+  width: 45px; }
+
+.dots {
+  width: 90%;
+  padding: 20px; }
+
+.image {
+  max-height: 375px; }
+
+.toolbar {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  max-height: 45px; }
+
+.toolbar3 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.combined-shape1 {
+  width: 70%;
+  padding: 10px; }
+
+.footerInstagram {
+  border-top: 1px solid #afafaf;
+  background-color: #fafafa;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 2 7%;
+          flex: 1 2 7%;
+  border-bottom: 1px solid #afafaf;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 45px; }

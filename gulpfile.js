@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var autoprefixer = require('gulp-autoprefixer');
 
 var src = {
   html: './src/*.html',
@@ -18,6 +19,7 @@ var dist = {
 gulp.task('sass', function() {
   return gulp.src(src.sass)
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({browsers: ['last 2 versions']}))
     .pipe(gulp.dest(dist.sass));
 });
 
